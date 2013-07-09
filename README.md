@@ -2,13 +2,17 @@ Rails4 + Twitter Bootstrap + Devise + CanCan
 
 == Only a template ==
 
-Rails github.com/rails/rails
+Rails 
+https://github.com/rails/rails
 
-Devise github.com/plataformatec/devise
+Devise 
+https://github.com/plataformatec/devise
 
-CanCan github.com/ryanb/cancan
+CanCan 
+https://github.com/ryanb/cancan
 
-Twitter Bootstrap twitter.github.io/bootstrap/
+Twitter Bootstrap 
+https://twitter.github.io/bootstrap/
 
 __
 
