@@ -1,0 +1,22 @@
+Rails4 + Twitter Bootstrap + Devise + CanCan
+============================================
+
+== Only a template ==
+
+Rails 
+https://github.com/rails/rails
+
+Devise
+https://github.com/plataformatec/devise
+
+CanCan
+https://github.com/ryanb/cancan
+
+Twitter Bootstrap
+http://twitter.github.io/bootstrap/
+
+________________________
+
+MIT License
+
+http://www.opensource.org/licenses/mit-license
