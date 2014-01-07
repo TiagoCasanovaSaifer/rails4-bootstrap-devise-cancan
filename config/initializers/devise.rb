@@ -1,9 +1,15 @@
 # Use this hook to configure devise mailer, warden hooks and so forth.
 # Many of these configuration options can be set straight in your model.
 Devise.setup do |config|
+  # The secret key used by Devise. Devise uses this key to generate
+  # random tokens. Changing this key will render invalid all existing
+  # confirmation, reset password and unlock tokens in the database.
+  config.secret_key = '6ac95c63d3ec4f9fec3617261c17e8911a8fc340bc0f9ec9b22f5167699d8c3a91ab3fd8e8c7dc1e651785f8a90b1033f46711176a76879da17b5e095d537a1b'
+
   # ==> Mailer Configuration
   # Configure the e-mail address which will be shown in Devise::Mailer,
-  # note that it will be overwritten if you use your own mailer class with default "from" parameter.
+  # note that it will be overwritten if you use your own mailer class 
+  # with default "from" parameter.
   config.mailer_sender = "please-change-me-at-config-initializers-devise@example.com"
 
   # Configure the class responsible to send e-mails.
@@ -84,6 +90,12 @@ Devise.setup do |config|
   # your test suite dramatically. However, it is STRONGLY RECOMMENDED to not use
   # a value less than 10 in other environments.
   config.stretches = Rails.env.test? ? 1 : 10
+
+  # By default, Devise cleans up the CSRF token on authentication to
+  # avoid CSRF token fixation attacks. This means that, when using AJAX
+  # requests for sign in and sign up, you need to get a new CSRF token
+  # from the server. You can disable this option at your own risk.
+  # config.clean_up_csrf_token_on_authentication = true
 
   # Setup a pepper to generate the encrypted password.
   # config.pepper = "9e745f31229e5c27d4302f8f3ec2ba8b61927823a62e84adb11648ffb968fed4ebb6804dde3c53f87d064cf2508b2d365f5e04ee48b46366cf55829295e612fe"
